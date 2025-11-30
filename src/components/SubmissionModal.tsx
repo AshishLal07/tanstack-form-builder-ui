@@ -32,10 +32,10 @@ const SubmissionModal: React.FC<{
 
                     <div className="space-y-4">
                         {Object.entries(submission.data).map(([key, value]) => {
-                            if(key == "fields"){
+                            if (key == "fields") {
                                 return null;
                             }
-                           return <div key={key} className="border-b border-gray-100 pb-3">
+                            return <div key={key} className="border-b border-gray-100 pb-3">
                                 <p className="text-sm font-medium text-gray-700 mb-1">{key}</p>
                                 <p className="text-sm text-gray-900">
                                     {Array.isArray(value) ? value.join(', ') :
