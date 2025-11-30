@@ -1,6 +1,3 @@
-
-
-
 export interface Submission {
     id: string;
     createdAt: string;
